@@ -1,2 +1,7 @@
-# minne-story-gen
-MinneAnalytics Story Generation Repo
+# MinneAnalytics Story Generation Repo
+
+## Installation
+
+```
+poetry install
+```

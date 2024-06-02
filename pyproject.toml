@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "minne-story-gen"
+version = "0.1.0"
+description = ""
+packages = [
+    { include = "minne_story_gen", from = "src/" },
+]
+authors = ["John S Hudzina <john.hudzina@thomsonreuters.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.2.1"
+langchain-aws = "^0.1.6"
+langgraph = "^0.0.60"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+poethepoet = "^0.26.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+add_kernel = "jupyter kernelspec install --user --name=minne-story-gen"
